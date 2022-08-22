@@ -5,18 +5,9 @@
 
 body {
   background-color: #ffffff;
-  animation-name: background;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;  
 }
 
-@keyframes background{
-  0%   {background-color:rgb(136, 104, 104); }
-  25%  {background-color:rgb(155, 155, 110); }
-  50%  {background-color:rgb(113, 113, 148); }
-  75%  {background-color:rgb(107, 148, 107); }
-  100% {background-color:rgb(143, 110, 110); }
-}
+
 
 .encabezado {
   position: sticky;
@@ -69,18 +60,7 @@ body {
   text-decoration: none;
   color: white;
   background-color: #22223b;
-  animation-name: logo;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  position: relative; 
-}
 
-@keyframes logo{
-  0%   {background-color:red; left:20px;}
-  25%  {background-color:yellow; left:20px;}
-  50%  {background-color:blue; top:20px;}
-  75%  {background-color:green; right:20px;}
-  100% {background-color:red; bottom:20px;}
 }
 
 .logo:hover {
@@ -123,14 +103,9 @@ body {
 .noticia img {
   width: 100%;
   margin-bottom: 20px;
-  transition: width 2s, height 2s, transform 2s;
-}
+ }
 
-.noticia img:hover{
-  width: 3px;
-  height: 300px;
-  transform: rotate(300deg);
-}
+
 
 .contenedor_inicio section p {
   font-size: 20px;
