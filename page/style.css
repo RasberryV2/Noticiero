@@ -93,7 +93,7 @@ body {
 }
 
 .contenedor_inicio section {
-  width: 70%;
+  /* width: 70%; */
 }
 
 .noticia {
@@ -113,8 +113,12 @@ body {
   margin-bottom: 10px;
 }
 
+.contenedor_inicio h2{
+  font-weight: bold;
+}
+
 .informacionExtra {
-  width: 30%;
+  /* width: 30%; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -140,6 +144,7 @@ body {
 .noticiaAside h3 {
   margin-bottom: 30px;
   font-size: 20px;
+  font-weight: bold;
 }
 
 .final {
@@ -154,7 +159,8 @@ body {
 
 .final a img {
   height: 30px;
-  width: 30px;
+  /* width: 30px; */
+  width: 60px;
   padding: 0 10px;
   border-right: 1px solid #fff;
 }
