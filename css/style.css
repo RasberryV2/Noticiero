@@ -1,25 +1,3 @@
-
-body {
-  background-color: #ffffff;
-}
-
-
-
-.encabezado {
-  position: sticky;
-  top: 0;
-}
-
-
-
-.navegacion ul {
-  list-style: none;
-  display: flex;
-  padding: 0;
-  /* background-color: #22223b; */
-  justify-content: space-between;
-}
-
 .navegacion {
   display: flex;
   align-items: center;
@@ -27,11 +5,15 @@ body {
   background-color: #22223b;
   padding: 20px 100px;
 }
-
+.navegacion ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+}
 .navegacion ul li {
   margin: 5px 30px;
 }
-
 .navegacion ul a {
   text-decoration: none;
   padding: 15px;
@@ -39,24 +21,60 @@ body {
   background-color: #494c68;
   border-radius: 10px;
   color: white;
-  border-bottom: 05px solid #39396b;
+  border-bottom: 5px solid #39396b;
   font-family: "Montserrat", sans-serif;
   box-shadow: 2px 4px 10px 0 #000;
   text-shadow: 2px 4px 10px #000;
   animation-name: nav;
   animation-duration: 5s;
-  animation-iteration-count:infinite;
+  animation-iteration-count: infinite;
 }
-
-@keyframes nav {
-  from {color: blueviolet;}
-  to{color:orangered}
-}
-
 .navegacion ul a:hover {
   color: #9898ca;
   background-color: #4e5277;
-  border-bottom: 03px solid #39396b;
+  border-bottom: 3px solid #39396b;
+}
+
+@keyframes nav {
+  from {
+    color: blueviolet;
+  }
+  to {
+    color: orangered;
+  }
+}
+.final {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  color: white;
+  background-color: #0b0b1a;
+}
+.final a img {
+  height: 30px;
+  width: 60px;
+  padding: 0 10px;
+  border-right: 1px solid #fff;
+}
+.final ul {
+  list-style: none;
+  display: flex;
+  margin-bottom: 30px;
+  padding: 0;
+}
+.final ul li:last-child a img {
+  border-right: none;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.encabezado {
+  position: sticky;
+  top: 0;
 }
 
 .logo {
@@ -67,18 +85,36 @@ body {
   position: relative;
   animation-name: logo;
   animation-duration: 4s;
-  animation-iteration-count:infinite
-  
-
+  animation-iteration-count: infinite;
 }
+
 @keyframes logo {
-  0%   {color:red; left:0px; top:0px;}
-  25%  {color:yellow; left:50px; right:50px;}
-  50%  {color:blue; left:50px; top:0px;}
-  75%  {color:green; left:0px; top:0px;}
-  100% {color:red; left:0px; top:0px;}
+  0% {
+    color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    color: yellow;
+    left: 50px;
+    right: 50px;
+  }
+  50% {
+    color: blue;
+    left: 50px;
+    top: 0px;
+  }
+  75% {
+    color: green;
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    color: red;
+    left: 0px;
+    top: 0px;
+  }
 }
-
 .logo:hover {
   color: #9898ca;
 }
@@ -99,14 +135,14 @@ body {
   color: #000;
   animation-name: titulo;
   animation-duration: 1s;
-  animation-iteration-count:infinite;
-  
+  animation-iteration-count: infinite;
 }
 
 @keyframes titulo {
-  from {color: greenyellow;}
+  from {
+    color: greenyellow;
+  }
 }
-
 .titulo a:hover {
   color: #ff0015;
 }
@@ -119,7 +155,6 @@ body {
 /* .contenedor_inicio section {
   width: 70%;
 } */
-
 .noticia {
   margin-bottom: 100px;
 }
@@ -127,9 +162,7 @@ body {
 .noticia img {
   width: 100%;
   margin-bottom: 20px;
- }
-
-
+}
 
 .contenedor_inicio section p {
   font-size: 20px;
@@ -137,7 +170,7 @@ body {
   margin-bottom: 10px;
 }
 
-.contenedor_inicio h2{
+.contenedor_inicio h2 {
   font-weight: bold;
 }
 
@@ -171,74 +204,46 @@ body {
   font-weight: bold;
 }
 
-.final {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  justify-content: center;
-  height: 250px;
-  color: #ffffff;
-  background-color: #0b0b1a;
-}
-
-.final a img {
-  height: 30px;
-  /* width: 30px; */
-  width: 60px;
-  padding: 0 10px;
-  border-right: 1px solid #fff;
-}
-
-.final ul {
-  list-style: none;
-  display: flex;
-  margin-bottom: 30px;
-  padding: 0;
-}
-
-.final ul li:last-child a img {
-  border-right: none;
-}
-
-span{
+span {
   display: block;
   white-space: nowrap;
   border-right: 4px solid;
   width: 27ch;
-  animation: typing 5s steps(27),
-  blink .5s infinite step-end alternate;
+  animation: typing 5s steps(27), blink 0.5s infinite step-end alternate;
   overflow: hidden;
-  animation-iteration-count:infinite;
+  animation-iteration-count: infinite;
 }
 
-@keyframes typing{
-  from { width: 0;}
+@keyframes typing {
+  from {
+    width: 0;
+  }
 }
-
-@keyframes blink{
-  50% { border-color: transparent;}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
-
-.typeo{
+.typeo {
   display: block;
   white-space: nowrap;
   border-right: 4px solid;
   width: 51ch;
-  animation: typing 4s steps(51),
-  blink .5s infinite step-end alternate;
+  animation: typing 4s steps(51), blink 0.5s infinite step-end alternate;
   overflow: hidden;
 }
 
-@keyframes typing{
-  from { width: 0;}
+@keyframes typing {
+  from {
+    width: 0;
+  }
 }
-
-@keyframes blink{
-  50% { border-color: transparent;}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
-
 /*PAGINA DE DEPORTES*/
-
 .seccionDeporte {
   display: flex;
   justify-content: center;
@@ -298,7 +303,6 @@ span{
 }
 
 /*Seccion de css de GLOBO*/
-
 .containerPrincipal {
   display: flex;
 }
@@ -338,7 +342,6 @@ span{
 }
 
 /*Seccion de CSS de Latam*/
-
 .latamSeccion {
   display: flex;
 }
@@ -393,25 +396,18 @@ span{
   font-size: 25px;
 }
 
-.divArticulo a{
-    color: #000;
-    text-decoration: none;
-
+.divArticulo a {
+  color: #000;
+  text-decoration: none;
 }
 
-.divArticulo a:hover{
-    color: red;
+.divArticulo a:hover {
+  color: red;
 }
 
 /*Seccion de CSS de Salud*/
-
 .containerSalud {
-  background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)
-    ),
-    url(./image/fondo.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./image/fondo.jpg);
   padding: 50px;
   backdrop-filter: opacity(20%);
 }
@@ -452,8 +448,6 @@ span{
 }
 
 /*Seccion de CSS Tecnologia*/
-
-
 .articuloTecno {
   display: flex;
   flex-wrap: wrap;
@@ -468,27 +462,25 @@ span{
   justify-content: space-around;
 }
 
-
 .divImg a {
   text-decoration: none;
 }
 
-.divImg{
+.divImg {
   margin: 0px 10px;
 }
 
 .divImg img {
-    width: 100%;
-    height: 300px;
+  width: 100%;
+  height: 300px;
 }
 
 .noticiaPrincipal {
- 
   font-size: 20px;
 }
 
 .noticiaPrincipal img {
- width: 100%;
+  width: 100%;
 }
 
 .noticiaPrincipal h2 {
@@ -524,7 +516,6 @@ span{
 }
 
 /*Seccion de CSS de Contacto*/
-
 .mainContacto {
   background-image: url(https://ichef.bbci.co.uk/images/ic/1280xn/p08tcz26.png);
   background-repeat: no-repeat;
@@ -578,79 +569,63 @@ span{
 }
 
 /* CSS DE INDEX GRID Y CONTACTO GRID */
-
-.contenedor-grid{
+.contenedor-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr ;
+  grid-template-columns: 2fr 1fr;
   grid-template-rows: auto auto auto;
-  grid-template-areas: 
-  "header header"
-  "main aside"
-  "footer footer";
-
+  grid-template-areas: "header header" "main aside" "footer footer";
 }
 
-.header-grid{
+.header-grid {
   grid-area: header;
 }
 
-.main-grid{
+.main-grid {
   grid-area: main;
 }
 
-.aside-grid{
+.aside-grid {
   grid-area: aside;
 }
 
-.footer-grid{
+.footer-grid {
   grid-area: footer;
 }
 
-
-
-.grid-contacto{
+.grid-contacto {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto;
-  grid-template-areas: 
-  "header"
-  "main"
-  "footer";
+  grid-template-areas: "header" "main" "footer";
 }
 
-.grid-header{
+.grid-header {
   grid-area: header;
 }
 
-.grid-main{
+.grid-main {
   grid-area: main;
 }
 
-.grid-footer{
+.grid-footer {
   grid-area: footer;
 }
-@media screen and (max-width: 767px) {
 
+@media screen and (max-width: 767px) {
   .informacionExtra {
     display: none;
   }
-  
   /* seccion deportes */
-
-  .divDeporte img{
+  .divDeporte img {
     width: 100%;
     padding: 20px;
   }
-  
   .divDeporte p {
     margin: 20px;
   }
-  
-  
   .divNoticias img {
     width: 100%;
   }
-  
   .divFuera {
     display: flex;
     font-size: 13px;
@@ -660,115 +635,81 @@ span{
     margin: 60px;
     width: 100%;
   }
-
   /* seccion globo */
-  
   .containerPrincipal {
     display: flex;
   }
-  
-  .containerDiv{
+  .containerDiv {
     display: flex;
     justify-content: center;
     width: 100%;
     margin: 0;
-  }  
-  
+  }
   .asideGlobo {
     display: none;
   }
-  
-  
   .containerDiv .noticiaDiv {
     width: 100%;
   }
-  
   /*Seccion  Latam*/
-
-  
   .latamNoticia {
     padding: 20px;
     margin-top: 50px;
   }
-
-  .latamNoticia h2{
+  .latamNoticia h2 {
     text-align: center;
   }
-  
   .latamNoticia img {
     width: 100%;
   }
-  
   .noticiasArticle .divArticulo {
     width: 90%;
- 
   }
-  
   /* seccion salud */
-
-
-  .containerSalud h1{
+  .containerSalud h1 {
     text-align: center;
   }
-  
   .articuloSalud {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
-
-  
   .articuloSalud .divSalud {
     display: flex;
     flex-direction: column;
     width: 50%;
     padding: 30px;
   }
-  
-  
   .divSalud a {
     width: 100%;
     color: #000;
     text-decoration: none;
     margin-top: 10px;
   }
-  
   .divSalud img {
     width: 100%;
   }
-  
-  
   /* seccion tecnologia */
-  
-   
   .noticiaPrincipal {
     font-size: 20px;
   }
-
   .noticiaPrincipal h4 {
     margin: 30px;
     font-size: 40px;
   }
-  
   .articuloTecno {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
-  
   .containerImg {
     display: flex;
     justify-content: space-around;
   }
-  
-
   .divTecno {
-    
     margin-top: 40px;
     border-bottom: 1px solid #000;
   }
-  
   .padreDiv {
     display: flex;
     flex-direction: column;
@@ -776,38 +717,25 @@ span{
     width: 100%;
     margin-top: 100px;
   }
-  
   .divTecno a {
     text-decoration: none;
   }
-
-
-  
-
-  
 }
-  
-  
-  
-
 @media screen and (max-width: 1000px) {
   .navegacion {
     display: flex;
     background-color: #22223b;
   }
-
   .navegacion .lista-navegacion {
- display: none;
+    display: none;
   }
- 
   .mainContacto {
     background-image: url(https://ichef.bbci.co.uk/images/ic/1280xn/p08tcz26.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 40%;   
+    background-position: 40%;
   }
-
-   .formContacto {
+  .formContacto {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -816,78 +744,36 @@ span{
     width: 50%;
     margin-left: 10%;
   }
-  
-   .formContacto p {
+  .formContacto p {
     font-size: 20px;
     margin: 15px 40px;
   }
-  
   .inputContacto {
     width: 80%;
     margin: 0px 0px 30px 0;
   }
-  
   .inputContacto input {
     display: block;
     width: 90%;
     padding: 10px;
     margin: 15px 0px;
   }
-  
   .inputContacto textarea {
     width: 95%;
     resize: none;
     margin-top: 10px;
   }
-  
   .inputContacto label {
     font-size: 20px;
     font-weight: bold;
   }
-  
   .containerInput input {
     display: flex;
     justify-content: center;
   }
-  
   .inputCheckbox {
     display: flex;
   }
-  
-
 }
- 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*# sourceMappingURL=style.css.map */

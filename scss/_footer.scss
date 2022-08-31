@@ -1,0 +1,27 @@
+.final{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    color: $txt-col;
+    background-color: #0b0b1a;
+
+    a img{
+        height: 30px;
+        width: 60px;
+        padding: 0 10px;
+        border-right: 1px solid #fff;
+    }
+
+    ul{
+        list-style: none;
+        display: flex;
+        margin-bottom: 30px;
+        padding: 0;
+    }
+
+    ul li:last-child a img{
+        border-right: none;
+    }
+}
