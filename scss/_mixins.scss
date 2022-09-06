@@ -1,0 +1,12 @@
+@mixin navbar($bord-Col, $back-col){ 
+    text-decoration: none;
+    padding: 15px;
+    font-size: 20px;
+    background-color: $back-col;
+    border-radius: 10px;
+    color: $txt-col;
+    border-bottom: 5px solid $bord-Col ;
+    font-family: "Montserrat", sans-serif;
+    box-shadow: 2px 4px 10px 0 #000;
+    text-shadow: 2px 4px 10px #000;
+}

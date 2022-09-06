@@ -9,31 +9,19 @@
     padding: $pad-nav;
 
     ul{
-        list-style: none;
+        list-style: map-get($styles, liststyle );
         display: flex;
         padding: 0;
         justify-content: space-between;
     }
 
     ul li{
-        margin: 5px 30px;
+        margin: map-get($styles, marginUno );
     
     }
 
     ul a{
-        text-decoration: none;
-        padding: 15px;
-        font-size: 20px;
-        background-color: #494c68;
-        border-radius: 10px;
-        color: $txt-col;
-        border-bottom: 5px solid #39396b ;
-        font-family: "Montserrat", sans-serif;
-        box-shadow: 2px 4px 10px 0 #000;
-        text-shadow: 2px 4px 10px #000;
-        animation-name: nav;
-        animation-duration: 5s;
-        animation-iteration-count: infinite;
+      @include navbar ($bord-Col:#39396b, $back-col:#494c68)
     }
 
     ul a:hover{
@@ -43,12 +31,3 @@
     }
   }
 
-  @keyframes nav {
-    from {
-      color: blueviolet;
-    }
-    to {
-      color: orangered;
-    }
-
-}

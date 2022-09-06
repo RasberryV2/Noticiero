@@ -25,9 +25,6 @@
   font-family: "Montserrat", sans-serif;
   box-shadow: 2px 4px 10px 0 #000;
   text-shadow: 2px 4px 10px #000;
-  animation-name: nav;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
 }
 .navegacion ul a:hover {
   color: #9898ca;
@@ -35,14 +32,6 @@
   border-bottom: 3px solid #39396b;
 }
 
-@keyframes nav {
-  from {
-    color: blueviolet;
-  }
-  to {
-    color: orangered;
-  }
-}
 .final {
   display: flex;
   flex-direction: column-reverse;
@@ -68,6 +57,19 @@
   border-right: none;
 }
 
+.logo {
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+  background-color: #22223b;
+}
+
+.informacionExtra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 body {
   background-color: #ffffff;
 }
@@ -77,44 +79,6 @@ body {
   top: 0;
 }
 
-.logo {
-  font-size: 30px;
-  text-decoration: none;
-  color: white;
-  background-color: #22223b;
-  position: relative;
-  animation-name: logo;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes logo {
-  0% {
-    color: red;
-    left: 0px;
-    top: 0px;
-  }
-  25% {
-    color: yellow;
-    left: 50px;
-    right: 50px;
-  }
-  50% {
-    color: blue;
-    left: 50px;
-    top: 0px;
-  }
-  75% {
-    color: green;
-    left: 0px;
-    top: 0px;
-  }
-  100% {
-    color: red;
-    left: 0px;
-    top: 0px;
-  }
-}
 .logo:hover {
   color: #9898ca;
 }
@@ -133,16 +97,8 @@ body {
 .titulo a {
   text-decoration: none;
   color: #000;
-  animation-name: titulo;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
 }
 
-@keyframes titulo {
-  from {
-    color: greenyellow;
-  }
-}
 .titulo a:hover {
   color: #ff0015;
 }
@@ -152,9 +108,6 @@ body {
   height: 100%;
 }
 
-/* .contenedor_inicio section {
-  width: 70%;
-} */
 .noticia {
   margin-bottom: 100px;
 }
@@ -175,10 +128,6 @@ body {
 }
 
 .informacionExtra {
-  /* width: 30%; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin: 60px 0;
   padding: 0px 70px;
   line-height: 25px;
@@ -204,50 +153,10 @@ body {
   font-weight: bold;
 }
 
-span {
-  display: block;
-  white-space: nowrap;
-  border-right: 4px solid;
-  width: 27ch;
-  animation: typing 5s steps(27), blink 0.5s infinite step-end alternate;
-  overflow: hidden;
-  animation-iteration-count: infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-}
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
-.typeo {
-  display: block;
-  white-space: nowrap;
-  border-right: 4px solid;
-  width: 51ch;
-  animation: typing 4s steps(51), blink 0.5s infinite step-end alternate;
-  overflow: hidden;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-}
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
 /*PAGINA DE DEPORTES*/
 .seccionDeporte {
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 100%;
   flex-direction: column;
 }
@@ -255,7 +164,6 @@ span {
 .divDeporte {
   display: flex;
   flex-direction: column;
-  align-items: center;
   font-size: 20px;
   justify-content: center;
   max-width: 1600px;
@@ -348,7 +256,6 @@ span {
 
 .latamNoticia {
   display: flex;
-  align-items: center;
   flex-direction: column;
   padding: 0 100px;
   margin-top: 100px;
@@ -381,7 +288,6 @@ span {
 .noticiasArticle .divArticulo {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
   width: 40%;
   margin: 0px 50px 50px 50px;
@@ -417,13 +323,11 @@ span {
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
 }
 
 .containerSalud h1 a {
   font-size: 40px;
   justify-content: center;
-  align-items: center;
   color: #000;
   text-decoration: none;
 }
@@ -431,7 +335,6 @@ span {
 .articuloSalud .divSalud {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
   width: 20%;
   padding: 30px;
@@ -506,7 +409,6 @@ span {
 .padreDiv {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 100%;
   margin-top: 100px;
 }
@@ -525,7 +427,6 @@ span {
 .formContacto {
   display: flex;
   flex-direction: column;
-  align-items: center;
   height: 964px;
   background-color: #fff;
   width: 20%;
@@ -672,7 +573,6 @@ span {
   .articuloSalud {
     display: flex;
     justify-content: center;
-    align-items: center;
   }
   .articuloSalud .divSalud {
     display: flex;
@@ -713,7 +613,6 @@ span {
   .padreDiv {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 100%;
     margin-top: 100px;
   }
@@ -738,7 +637,6 @@ span {
   .formContacto {
     display: flex;
     flex-direction: column;
-    align-items: center;
     height: 963px;
     background-color: #fff;
     width: 50%;

@@ -1,0 +1,13 @@
+%logo {
+    font-size: 30px;
+    text-decoration: none;
+    color: $txt-col;
+    background-color: $bg-color;
+}
+
+
+%flex {
+    display: $dis-flex;
+    flex-direction: column;
+    align-items: center;
+}
