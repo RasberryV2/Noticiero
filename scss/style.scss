@@ -24,8 +24,6 @@
 
 
 
-
-
 body {
     background-color: #ffffff;
   }
@@ -127,7 +125,7 @@ body {
   .seccionDeporte {
     display: map-get($styles, displayflex);
     justify-content: map-get($styles, justifycont);
-    align-items: map-get($styles, alignitem);
+    align-items: center;
     width: map-get($styles, width100);
     flex-direction: map-get($styles, flexcolumns );
   }
@@ -135,7 +133,7 @@ body {
   .divDeporte {
     display: map-get($styles, displayflex);
     flex-direction: map-get($styles, flexcolumns );
-    align-items: map-get($styles, alignitem);
+    align-items: center;
     font-size: 20px;
     justify-content: map-get($styles, justifycont);
     max-width: 1600px;
@@ -230,7 +228,7 @@ body {
   
   .latamNoticia {
     display: map-get($styles, displayflex);
-    align-items: map-get($styles, alignitem);
+    align-items: center;
     flex-direction: map-get($styles, flexcolumns );
     padding: 0 100px;
     margin-top: 100px;
@@ -263,7 +261,7 @@ body {
   .noticiasArticle .divArticulo {
     display: map-get($styles, displayflex);
     justify-content: map-get($styles, justifycont);
-    align-items: map-get($styles, alignitem);
+    align-items: center;
     flex-direction: map-get($styles, flexcolumns );
     width: 40%;
     margin: 0px 50px 50px 50px;
@@ -306,13 +304,13 @@ body {
     width: map-get($styles, width100);
     flex-wrap: wrap;
     justify-content: map-get($styles, justifycont);
-    align-items: map-get($styles, alignitem);
+    align-items: center;
   }
   
   .containerSalud h1 a {
     font-size: 40px;
     justify-content: map-get($styles, justifycont);
-    align-items: map-get($styles, alignitem);
+    align-items: center;
     color: #000;
     text-decoration: map-get($styles, textdecoration );
   }
@@ -320,7 +318,7 @@ body {
   .articuloSalud .divSalud {
     display: map-get($styles, displayflex);
     justify-content: map-get($styles, justifycont);
-    align-items: map-get($styles, alignitem);
+    align-items: center;
     flex-direction: map-get($styles, flexcolumns );
     width: 20%;
     padding: 30px;
@@ -399,7 +397,7 @@ body {
   .padreDiv {
     display: map-get($styles, displayflex);
     flex-direction: map-get($styles, flexcolumns );
-    align-items: map-get($styles, alignitem);
+    align-items: center;
     width: map-get($styles, width100);
     margin-top: 100px;
   }
@@ -419,7 +417,7 @@ body {
   .formContacto {
     display: map-get($styles, displayflex);
     flex-direction: map-get($styles, flexcolumns );
-    align-items: map-get($styles, alignitem);
+    align-items: center;
     height: 964px;
     background-color: #fff;
     width: 20%;
@@ -599,7 +597,7 @@ body {
     .articuloSalud {
       display: map-get($styles, displayflex);
       justify-content: map-get($styles, justifycont);
-      align-items: map-get($styles, alignitem);
+      align-items: center;
     }
     
   
@@ -657,7 +655,7 @@ body {
     .padreDiv {
       display: map-get($styles, displayflex);
       flex-direction: map-get($styles, flexcolumns );
-      align-items: map-get($styles, alignitem);
+      align-items: center;
       width: map-get($styles, width100);
       margin-top: 100px;
     }
@@ -695,7 +693,7 @@ body {
      .formContacto {
       display: map-get($styles, displayflex);
       flex-direction: map-get($styles, flexcolumns );
-      align-items: map-get($styles, alignitem);
+      align-items: center;
       height: 963px;
       background-color: #fff;
       width: 50%;
