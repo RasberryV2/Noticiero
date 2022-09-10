@@ -289,14 +289,8 @@ body {
   /*Seccion de CSS de Salud*/
   
   .containerSalud {
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.2),
-        rgba(0, 0, 0, 0.2)
-      ),
-      url(./image/fondo.jpg);
     padding: 50px;
-    backdrop-filter: opacity(20%);
+
   }
   
   .articuloSalud {
@@ -305,7 +299,10 @@ body {
     flex-wrap: wrap;
     justify-content: map-get($styles, justifycont);
     align-items: center;
+    
   }
+
+  
   
   .containerSalud h1 a {
     font-size: 40px;
