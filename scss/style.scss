@@ -415,7 +415,6 @@ body {
     display: map-get($styles, displayflex);
     flex-direction: map-get($styles, flexcolumns );
     align-items: center;
-    height: 964px;
     background-color: #fff;
     width: 20%;
     margin-left: 25%;
@@ -457,58 +456,6 @@ body {
     display: map-get($styles, displayflex);
   }
   
-  /* CSS DE INDEX GRID Y CONTACTO GRID */
-  
-  .contenedor-grid{
-    display: grid;
-    grid-template-columns: 2fr 1fr ;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: 
-    "header header"
-    "main aside"
-    "footer footer";
-  
-  }
-  
-  .header-grid{
-    grid-area: header;
-  }
-  
-  .main-grid{
-    grid-area: main;
-  }
-  
-  .aside-grid{
-    grid-area: aside;
-  }
-  
-  .footer-grid{
-    grid-area: footer;
-  }
-  
-  
-  
-  .grid-contacto{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
-  }
-  
-  .grid-header{
-    grid-area: header;
-  }
-  
-  .grid-main{
-    grid-area: main;
-  }
-  
-  .grid-footer{
-    grid-area: footer;
-  }
   @media screen and (max-width: 767px) {
   
     .informacionExtra {
@@ -594,7 +541,7 @@ body {
     .articuloSalud {
       display: map-get($styles, displayflex);
       justify-content: map-get($styles, justifycont);
-      align-items: center;
+      align-items: flex-start;
     }
     
   
@@ -691,7 +638,6 @@ body {
       display: map-get($styles, displayflex);
       flex-direction: map-get($styles, flexcolumns );
       align-items: center;
-      height: 963px;
       background-color: #fff;
       width: 50%;
       margin-left: 10%;
