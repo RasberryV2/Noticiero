@@ -298,7 +298,7 @@ body {
     width: map-get($styles, width100);
     flex-wrap: wrap;
     justify-content: map-get($styles, justifycont);
-    align-items: center;
+    align-items: flex-start;
     
   }
 
