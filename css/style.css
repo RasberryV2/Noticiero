@@ -237,13 +237,16 @@ body {
   display: flex;
   flex-direction: column;
   margin: 50px;
-  font-size: 10px;
-  text-align: start;
+  text-align: center;
 }
 
 .asideGlobo video {
   width: 100%;
   margin: 20px;
+}
+
+.asideGlobo h2 {
+  font-size: 25px;
 }
 
 .containerDiv .noticiaDiv {
